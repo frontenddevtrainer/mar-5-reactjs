@@ -5,11 +5,11 @@ import DateMessage from "./components/date";
 function App() {
   const classNames = "heading title";
   const message = "Hello World!!!";
-  const showDateMessage = true
+  const showDateMessage = false
   return (
     <>
       <div className={classNames}>{message}</div>
-      {showDateMessage && <DateMessage />}
+      {showDateMessage ? <DateMessage /> : <div>No date message</div>}
     </>
   );
 }
