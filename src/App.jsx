@@ -1,15 +1,16 @@
 import { useState } from "react";
 import "./App.css";
+import DateMessage from "./components/date";
 
 function App() {
   const classNames = "heading title";
   const message = "Hello World!!!";
-  const date = new Date().toDateString();
-
   return (
     <>
       <div className={classNames}>{message}</div>
-      <p>Today is {date}.</p>
+      {/* <DateMessage></DateMessage> */}
+      {/* or */}
+      <DateMessage/>
     </>
   );
 }
